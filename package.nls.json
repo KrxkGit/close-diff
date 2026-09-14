@@ -1,0 +1,8 @@
+{
+  "command.closeAllDiffEditors.title": "Close All Diff Editors",
+  "command.closeAllDiffEditors.category": "Close Diff",
+  "extension.displayName": "Close Diff Views",
+  "extension.description": "Batch close all diff editor tabs in one command.",
+  "message.noDiffFound": "No diff editors are currently open.",
+  "message.closed": "Closed {0} diff editor(s)."
+}

@@ -1,0 +1,76 @@
+{
+  "name": "close-diff",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
+  "version": "0.0.1",
+  "publisher": "krxk",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KrxkGit/close-diff.git"
+  },
+  "homepage": "https://github.com/KrxkGit/close-diff",
+  "bugs": {
+    "url": "https://github.com/KrxkGit/close-diff/issues"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "diff",
+    "close",
+    "editor",
+    "tab"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "close-diff.closeAllDiffEditors",
+        "title": "%command.closeAllDiffEditors.title%",
+        "category": "%command.closeAllDiffEditors.category%",
+        "icon": "$(diff)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "close-diff.closeAllDiffEditors",
+        "key": "ctrl+shift+d",
+        "mac": "cmd+shift+d",
+        "when": "editorIsOpen"
+      }
+    ],
+    "menus": {
+      "editor/title/context": [
+        {
+          "command": "close-diff.closeAllDiffEditors",
+          "group": "1_close@-1"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "close-diff.closeAllDiffEditors"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.x",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^6.x",
+    "@typescript-eslint/parser": "^6.x",
+    "eslint": "^8.x",
+    "typescript": "^5.x"
+  }
+}

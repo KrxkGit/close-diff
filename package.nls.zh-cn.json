@@ -1,0 +1,8 @@
+{
+  "command.closeAllDiffEditors.title": "关闭所有 Diff 视图",
+  "command.closeAllDiffEditors.category": "Close Diff",
+  "extension.displayName": "Close Diff Views",
+  "extension.description": "一键批量关闭所有 Diff 编辑器标签页。",
+  "message.noDiffFound": "当前没有打开的 Diff 视图。",
+  "message.closed": "已关闭 {0} 个 Diff 视图。"
+}

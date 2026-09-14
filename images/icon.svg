@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- 背景渐变 -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e2e"/>
+      <stop offset="100%" style="stop-color:#2d2d44"/>
+    </linearGradient>
+    <!-- 红色关闭按钮渐变 -->
+    <linearGradient id="closeBtn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f38ba8"/>
+      <stop offset="100%" style="stop-color:#e05c7a"/>
+    </linearGradient>
+    <!-- diff 左侧颜色（删除，红） -->
+    <linearGradient id="diffLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f38ba8;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#f38ba8;stop-opacity:0.08"/>
+    </linearGradient>
+    <!-- diff 右侧颜色（新增，绿） -->
+    <linearGradient id="diffRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a6e3a1;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#a6e3a1;stop-opacity:0.25"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 圆角背景 -->
+  <rect width="128" height="128" rx="20" ry="20" fill="url(#bg)"/>
+
+  <!-- ── 左侧编辑器面板 ── -->
+  <rect x="8" y="22" width="52" height="88" rx="5" ry="5" fill="#313244" opacity="0.9"/>
+  <!-- 左侧标题栏 -->
+  <rect x="8" y="22" width="52" height="12" rx="5" ry="5" fill="#45475a"/>
+  <rect x="8" y="28" width="52" height="6" fill="#45475a"/>
+  <!-- 左侧 diff 行（删除，红色） -->
+  <rect x="11" y="38" width="46" height="5" rx="2" fill="url(#diffLeft)"/>
+  <rect x="11" y="38" width="46" height="5" rx="2" fill="#f38ba8" opacity="0.18"/>
+  <rect x="11" y="38" width="3" height="5" rx="1" fill="#f38ba8" opacity="0.7"/>
+  <rect x="16" y="39.5" width="28" height="2" rx="1" fill="#f38ba8" opacity="0.5"/>
+
+  <rect x="11" y="46" width="46" height="5" rx="2" fill="#cdd6f4" opacity="0.06"/>
+  <rect x="16" y="47.5" width="22" height="2" rx="1" fill="#cdd6f4" opacity="0.3"/>
+
+  <rect x="11" y="54" width="46" height="5" rx="2" fill="#f38ba8" opacity="0.18"/>
+  <rect x="11" y="54" width="3" height="5" rx="1" fill="#f38ba8" opacity="0.7"/>
+  <rect x="16" y="55.5" width="32" height="2" rx="1" fill="#f38ba8" opacity="0.5"/>
+
+  <rect x="11" y="62" width="46" height="5" rx="2" fill="#cdd6f4" opacity="0.06"/>
+  <rect x="16" y="63.5" width="18" height="2" rx="1" fill="#cdd6f4" opacity="0.3"/>
+
+  <rect x="11" y="70" width="46" height="5" rx="2" fill="#f38ba8" opacity="0.18"/>
+  <rect x="11" y="70" width="3" height="5" rx="1" fill="#f38ba8" opacity="0.7"/>
+  <rect x="16" y="71.5" width="25" height="2" rx="1" fill="#f38ba8" opacity="0.5"/>
+
+  <!-- ── 中间分隔线 ── -->
+  <line x1="64" y1="22" x2="64" y2="110" stroke="#585b70" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- ── 右侧编辑器面板 ── -->
+  <rect x="68" y="22" width="52" height="88" rx="5" ry="5" fill="#313244" opacity="0.9"/>
+  <!-- 右侧标题栏 -->
+  <rect x="68" y="22" width="52" height="12" rx="5" ry="5" fill="#45475a"/>
+  <rect x="68" y="28" width="52" height="6" fill="#45475a"/>
+  <!-- 右侧 diff 行（新增，绿色） -->
+  <rect x="71" y="38" width="46" height="5" rx="2" fill="#a6e3a1" opacity="0.18"/>
+  <rect x="71" y="38" width="3" height="5" rx="1" fill="#a6e3a1" opacity="0.7"/>
+  <rect x="76" y="39.5" width="30" height="2" rx="1" fill="#a6e3a1" opacity="0.5"/>
+
+  <rect x="71" y="46" width="46" height="5" rx="2" fill="#cdd6f4" opacity="0.06"/>
+  <rect x="76" y="47.5" width="22" height="2" rx="1" fill="#cdd6f4" opacity="0.3"/>
+
+  <rect x="71" y="54" width="46" height="5" rx="2" fill="#a6e3a1" opacity="0.18"/>
+  <rect x="71" y="54" width="3" height="5" rx="1" fill="#a6e3a1" opacity="0.7"/>
+  <rect x="76" y="55.5" width="35" height="2" rx="1" fill="#a6e3a1" opacity="0.5"/>
+
+  <rect x="71" y="62" width="46" height="5" rx="2" fill="#cdd6f4" opacity="0.06"/>
+  <rect x="76" y="63.5" width="18" height="2" rx="1" fill="#cdd6f4" opacity="0.3"/>
+
+  <rect x="71" y="70" width="46" height="5" rx="2" fill="#a6e3a1" opacity="0.18"/>
+  <rect x="71" y="70" width="3" height="5" rx="1" fill="#a6e3a1" opacity="0.7"/>
+  <rect x="76" y="71.5" width="28" height="2" rx="1" fill="#a6e3a1" opacity="0.5"/>
+
+  <!-- ── 关闭按钮（右上角红圆 + X） ── -->
+  <circle cx="100" cy="18" r="12" fill="url(#closeBtn)" opacity="0.95"/>
+  <!-- X 图标 -->
+  <line x1="95" y1="13" x2="105" y2="23" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="105" y1="13" x2="95" y2="23" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- ── 底部"全部"标记 ── -->
+  <rect x="20" y="98" width="88" height="14" rx="4" fill="#cba6f7" opacity="0.15"/>
+  <text x="64" y="108.5" font-family="'SF Mono', 'Fira Code', monospace" font-size="8" font-weight="600"
+        fill="#cba6f7" text-anchor="middle" opacity="0.9">CLOSE ALL DIFFS</text>
+</svg>
