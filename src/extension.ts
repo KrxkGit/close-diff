@@ -26,7 +26,7 @@ function t(nls: Record<string, string>, key: string, ...args: (string | number)[
 
 export function activate(context: vscode.ExtensionContext) {
   const disposable = vscode.commands.registerCommand(
-    'close-diff.closeAllDiffEditors',
+    'close-diff-tabs.closeAllDiffEditors',
     async () => {
       const nls = getNls();
 

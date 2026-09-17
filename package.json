@@ -1,17 +1,17 @@
 {
-  "name": "close-diff",
+  "name": "close-diff-tabs",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "krxk",
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KrxkGit/close-diff.git"
+    "url": "https://github.com/KrxkGit/close-diff-tabs.git"
   },
-  "homepage": "https://github.com/KrxkGit/close-diff",
+  "homepage": "https://github.com/KrxkGit/close-diff-tabs",
   "bugs": {
-    "url": "https://github.com/KrxkGit/close-diff/issues"
+    "url": "https://github.com/KrxkGit/close-diff-tabs/issues"
   },
   "engines": {
     "vscode": "^1.80.0"
@@ -30,7 +30,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "close-diff.closeAllDiffEditors",
+        "command": "close-diff-tabs.closeAllDiffEditors",
         "title": "%command.closeAllDiffEditors.title%",
         "category": "%command.closeAllDiffEditors.category%",
         "icon": "$(diff)"
@@ -38,7 +38,7 @@
     ],
     "keybindings": [
       {
-        "command": "close-diff.closeAllDiffEditors",
+        "command": "close-diff-tabs.closeAllDiffEditors",
         "key": "ctrl+shift+d",
         "mac": "cmd+shift+d",
         "when": "editorIsOpen"
@@ -47,13 +47,13 @@
     "menus": {
       "editor/title/context": [
         {
-          "command": "close-diff.closeAllDiffEditors",
+          "command": "close-diff-tabs.closeAllDiffEditors",
           "group": "1_close@-1"
         }
       ],
       "commandPalette": [
         {
-          "command": "close-diff.closeAllDiffEditors"
+          "command": "close-diff-tabs.closeAllDiffEditors"
         }
       ]
     }
